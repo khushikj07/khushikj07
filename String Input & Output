@@ -1,0 +1,14 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+   char name[20];
+   getline(cin,name);   /* cin.getline(name,20); now here parameters are like name where an array in which to store data and 20 define the number of data to be extracted and one more imp thing is that 
+       cin doesnot take space as input but getline take space as input so we always use getline */
+
+cout<<name;
+}
+
+for ex
+Virat Arora
+Virat Arora
