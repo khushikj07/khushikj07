@@ -12,3 +12,9 @@ cout<<name;
 for ex
 Virat Arora
 Virat Arora
+
+string str1="HAI";
+str1.front();     // access to first element
+str1.back();    // gives access to last element of string
+
+
