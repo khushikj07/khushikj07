@@ -1,3 +1,28 @@
+functions in string
+
+append(): Appends a string or a part of a string to the current string.
+string str = "hello";
+str.append(" world");
+cout << str; // Output: hello world
+
+subtr(): Returns a substring of the string.
+string str = "hello";
+str.append(" world");
+cout << str; // Output: hello world
+
+find() and rfind(): Finds the first or last occurrence of a substring in the string
+string str = "hello world";
+size_t pos = str.find("world"); // 6
+
+erase(): Erases a part of the string.
+string str = "hello world";
+str.erase(5, 6); // "hello"
+
+compare(): Compares two strings.
+string str1 = "hello";
+string str2 = "world";
+int result = str1.compare(str2); // returns a value < 0
+
 #include<bits/stdc++.h>
 using namespace std;
 int main()
@@ -22,5 +47,14 @@ cin>>fnum;
 int pos=fnum.find(".");
 string str;
 str.assign(fnum, pos+1);  // str ke pas 445 aaega . ke baad wali string assign ho jaegi
+
+find function:- The find function returns string::npos if the substring is not found. This means that the condition should be if(pos != string::npos).
+
+
+
+
+
+
+
 
 
