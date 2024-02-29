@@ -17,4 +17,10 @@ string str1="HAI";
 str1.front();     // access to first element
 str1.back();    // gives access to last element of string
 
+string fnum;     // 955.445
+cin>>fnum;
+int pos=fnum.find(".");
+string str;
+str.assign(fnum, pos+1);  // str ke pas 445 aaega . ke baad wali string assign ho jaegi
+
 
