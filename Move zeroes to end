@@ -1,0 +1,12 @@
+void pushZeroesEnd(int *input, int size)
+{
+    int j=0;
+    for(int i=0;i<size;i++){
+        if(input[i]!=0){
+           if(i!=j){
+                swap(input[i],input[j]);
+            }
+            j++;
+        }
+    }
+}
