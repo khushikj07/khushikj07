@@ -1,0 +1,39 @@
+L1=[1,2,'A',"Vani"]    
+  # List is mutable
+
+T1=(1,'a',"apu",1+2,L1)
+  # Tuple is immutable
+
+Set={21,8,'a',"Arvi", L1}
+  #. Set is mutable
+
+
+
+print(Set)
+
+
+
+In Python, a set can only contain immutable (hashable) objects. Lists, like L1 in your example, are mutable and therefore cannot be directly added to a set. If you try to do so, you'll encounter a TypeError.
+If you want to create a set that includes the elements of L1, you can convert L1 to a tuple, which is immutable, and then add it to the set. Here's how you can do it:
+L1 = [1, 2, 'A', "Vani"]
+L1_tuple = tuple(L1)
+Set = {21, 8, 'a', "Arvi", L1_tuple}
+print(Set)
+# Output = {'a', 'Arvi', (1, 2, 'A', 'Vani'), 8, 21}
+
+L1=[1,2,3]
+L2=[4,5,6]
+
+print (L1+L2)
+
+s1={1,2,3}
+s2={4,5,6}
+
+print (s1+s2)
+#TypeError: unsupported operand type(s) for +: 'set' and 'set'
+
+d1={1:"Ar",2:3}
+d2={4:5,6:'a'}
+
+print (d1+d2)
+#TypeError: unsupported operand type(s) for +: 'dic' and 'dic'
